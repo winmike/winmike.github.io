@@ -1,0 +1,90 @@
+{
+    "openapi": "3.0.1",
+    "info": {
+        "title": "NoBody",
+        "description": "",
+        "version": "1.0"
+    },
+    "servers": [
+        {
+            "url": "https://mbapim.azure-api.net/nobody"
+        }
+    ],
+    "paths": {
+        "/testpost": {
+            "post": {
+                "summary": "POST",
+                "operationId": "post",
+                "responses": {
+                    "200": {
+                        "description": null
+                    }
+                }
+            }
+        },
+        "/resource": {
+            "get": {
+                "summary": "getNoBody",
+                "operationId": "getnobody",
+                "responses": {
+                    "200": {
+                        "description": null
+                    }
+                }
+            }
+        },
+        "/securitykey": {
+            "get": {
+                "summary": "getSecurityKey",
+                "operationId": "getsecuritykey",
+                "parameters": [
+                    {
+                        "name": "customcertificate",
+                        "in": "header",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": null
+                    }
+                }
+            }
+        },
+        "/getsanitizedheaders": {
+            "get": {
+                "summary": "getsanitizedheaders",
+                "operationId": "getsanitizedheaders",
+                "responses": {
+                    "200": {
+                        "description": null
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "securitySchemes": {
+            "apiKeyHeader": {
+                "type": "apiKey",
+                "name": "Ocp-Apim-Subscription-Key",
+                "in": "header"
+            },
+            "apiKeyQuery": {
+                "type": "apiKey",
+                "name": "subscription-key",
+                "in": "query"
+            }
+        }
+    },
+    "security": [
+        {
+            "apiKeyHeader": []
+        },
+        {
+            "apiKeyQuery": []
+        }
+    ]
+}
