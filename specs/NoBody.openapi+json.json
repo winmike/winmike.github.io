@@ -1,8 +1,8 @@
 {
     "openapi": "3.0.1",
     "info": {
-        "title": "NoBody",
-        "description": "",
+        "title": "NoBody API",
+        "description": "Test API with no request bodies on POST",
         "version": "1.0"
     },
     "servers": [
