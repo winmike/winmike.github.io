@@ -1,9 +1,9 @@
 {
     "openapi": "3.0.1",
     "info": {
-      "title": "API",
-      "description": "LZPD Framework",
-      "termsOfService": "https://www.tbd.tld",
+      "title": "HTTPSTrans",
+      "description": "LZPD NRW Framework für Datenübertragung",
+      "termsOfService": "https://www.polizei.nrw",
       "contact": {
         "name": "Mike Becker",
         "url": "https://www.polizei.nrw.de",
