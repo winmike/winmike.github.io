@@ -17,7 +17,7 @@
     },
     "servers": [
       {
-        "url": "/LZPDFxDataService"
+        "url": "https://api-ext.dev.polizei.nrw/LZPDFxDataService"
       }
     ],
     "paths": {
