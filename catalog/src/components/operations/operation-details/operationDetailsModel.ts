@@ -1,5 +1,3 @@
-import { AuthorizationServer } from "./../../../models/authorizationServer";
-
 export class OperationDetailsModel {
     /**
      * Indicates whether "Try" button should appear on the operation details widget.
@@ -12,14 +10,14 @@ export class OperationDetailsModel {
     public defaultSchemaView?: string;
 
     /**
-     * External OAuth servers associated with API of this operation.
-     */
-    public authorizationServers: AuthorizationServer[];
-
-    /**
      * Indicates whether operation details should appear in the visible area (for example if API details is too long).
      */
     public enableScrollTo?: boolean;
+
+    /**
+     * Indicates whether the Test console should use CORS proxy vs direct calls from the browser.
+     */
+    public useCorsProxy?: boolean;
 
     constructor() {
         this.enableConsole = true;

@@ -1,5 +1,5 @@
 import * as express from "express";
-import * as mime from "mime-types";
+import * as mime from "mime";
 import { Req, Res, ExpressMiddlewareInterface, Middleware, NotFoundError, InternalServerError } from "routing-controllers";
 import { Logger } from "@paperbits/common/logging";
 import { IBlobStorage } from "@paperbits/common/persistence";
@@ -47,7 +47,7 @@ export class StaticContentMiddleware implements ExpressMiddlewareInterface {
 
         if (blob) {
             const fileName = path.split("/").pop();
-            const contentType = mime.lookup(fileName) || "application/octet-stream";
+            const contentType = mime.getType(fileName) || "application/octet-stream";
 
             response
                 .header("Content-Type", contentType)
@@ -112,6 +112,8 @@ export class StaticContentMiddleware implements ExpressMiddlewareInterface {
             await this.render(basePath, path, response, storage);
         }
         catch (error) {
+            console.log(error);
+            
             response
                 .status(500)
                 .header("Content-Type", "text/html")
