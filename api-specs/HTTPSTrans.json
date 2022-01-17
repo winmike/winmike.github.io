@@ -18,7 +18,10 @@
     "servers": [
       {
         "url": "https://api-ext.dev.polizei.nrw/LZPDFxDataService"
-      }
+      },
+      {
+        "url": "http://tr01int.westeurope.cloudapp.azure.com/LZPDFxDataService"
+      }        
     ],
     "paths": {
       "/api/DataRequest": {
