@@ -5,6 +5,7 @@ API Portal lets you create and publish a customized site with API documentation,
 [See the demo of a published API portal](https://aka.ms/apiportal/demo).
 
 ![API Portal](readme.gif)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fwinmike%2Fwinmike.github.io.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fwinmike%2Fwinmike.github.io?ref=badge_shield)
 
 ## Highlights
 
@@ -17,3 +18,7 @@ API Portal lets you create and publish a customized site with API documentation,
 ## Get started
 
 [The tutorial in the wiki section](https://github.com/Azure/API-Portal/wiki) describes how to publish the first API, customize the portal, and publish it with GitHub Pages or your preferred hosting solution.
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fwinmike%2Fwinmike.github.io.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fwinmike%2Fwinmike.github.io?ref=badge_large)
